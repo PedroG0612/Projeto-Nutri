@@ -123,9 +123,10 @@ habitos_de_vida:{
         jantar: "",
         ceia: '',
         petiscos_e_beliscos_ao_longo_do_dia: "",
-        consumo_de_doces: "",
+        consumo_de_doces: window.prompt("O paciente consome doces? "),
         consumo_de_alimentos_ultraprocessados: "",
         frequencia_de_refeições_fora_de_casa: 3,
+        tipos_de_refeições_fora_de_casa: ["fast food"]
 
 
     },

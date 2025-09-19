@@ -1,7 +1,7 @@
-let estresse = "Alto"
 
 
-switch(estresse){
+
+switch(ficha.habitos_de_vida.estresse.nivel){
     case "Alto":
         document.write("Requer descansar mais, se alimentar melhor e beber mais água")
     break
@@ -13,9 +13,7 @@ switch(estresse){
     break
 }
 
-let tipoDeAtividadeFisica = "musculação"
-
-switch(tipoDeAtividadeFisica){
+switch(ficha.habitos_de_vida.atividade_fisica.tipo_de_exercicio){
     case "musculação":
         document.write("Faz musculação")
     break
@@ -30,9 +28,7 @@ switch(tipoDeAtividadeFisica){
 }
 
 
-let metodoDePreparo = "assado"
-
-switch(metodoDePreparo){
+switch(ficha.avaliação_alimentar.metodos_de_preparo.metodo){
     case "frito":
         document.write("Prefere frito")
     break
@@ -45,9 +41,8 @@ switch(metodoDePreparo){
         document.write("Prefere grelhado")
 }
 
-let qualidadeSono = "Bom"
 
-switch(qualidadeSono){
+switch(ficha.habitos_de_vida.sono.qualidade_do_sono){
     case "leve":
         document.write("Qualidade de sono leve")
     break
@@ -60,9 +55,9 @@ switch(qualidadeSono){
         document.write("Qualidade de sono Bom")
 }
 
-let fezesConsistencia = 3
 
-switch(fezesConsistencia){
+
+switch(ficha.habito_intestinal.consistencia_das_fezes){
     case 1:
         document.write("Tipo 1: Caroços duros e separados, como nozes (difícil de passar).")
     break
@@ -97,41 +92,34 @@ switch(fezesConsistencia){
 }
 
 
-let peso = 70
-let altura = 1.79
-
-let imc = peso / altura**2
-
 switch(true){
-    case imc < 19:
+    case ficha.avaliação_antropométrica.imc < 19:
         document.write("Abaixo do peso!")
     break
 
-    case imc > 19 && imc < 25:
+    case ficha.avaliação_antropométrica.imc > 19 && ficha.avaliação_antropométrica.imc < 25:
         document.write("Peso Normal")
     break
 
-    case imc > 25 && imc < 30:
+    case ficha.avaliação_antropométrica.imc > 25 && ficha.avaliação_antropométrica.imc < 30:
         document.write("Sobrepeso")
     break
 
-    case imc > 30 && imc < 35:
+    case ficha.avaliação_antropométrica.imc > 30 && ficha.avaliação_antropométrica.imc < 35:
         document.write("Obesidade Grau I")
     break
 
-    case imc > 35 && imc < 40:
+    case ficha.avaliação_antropométrica.imc > 35 && ficha.avaliação_antropométrica.imc < 40:
         document.write("Obesidade de Grau II")
     break
 
-    case imc >= 40:
+    case ficha.avaliação_antropométrica.imc >= 40:
         document.write("Obesidade de Grau III( Obesidade Grave )")
     break
     }
 
 
-let tipoSuplemento = "creatina"
-
-switch(tipoSuplemento){
+switch(ficha.suplementos.usados){
     case "whey":
         document.write("Suplemento: Whey")
     break
@@ -151,9 +139,7 @@ switch(tipoSuplemento){
 }
 
 
-let refeicaoTipo = "fast food"
-
-switch(refeicaoTipo){
+switch(ficha.avaliação_alimentar.rotina_alimentar.tipos_de_refeições_fora_de_casa[0]){
     case "lanche":
         document.write("Refeição fora de casa: Lanche")
     break
@@ -174,24 +160,21 @@ switch(refeicaoTipo){
 }
 
 
-let frequenciaExercicioSemanal = 3
-
-
 switch(true){
-    case frequenciaExercicioSemanal = 0:
+    case ficha.atividade_fisica.frequencia_semanal = 0:
         document.write("Sedentário")
     break
 
 
-    case frequenciaExercicioSemanal == 1 || frequenciaExercicioSemanal == 2:
+    case ficha.atividade_fisica.frequencia_semanal == 1 || ficha.atividade_fisica.frequencia_semanal == 2:
         document.write("Leve")
     break
 
-    case frequenciaExercicioSemanal >= 3 && frequenciaExercicioSemanal <= 5:
+    case ficha.atividade_fisica.frequencia_semanal >= 3 && ficha.atividade_fisica.frequencia_semanal <= 5:
         document.write("Moderado")
     break
 
-    case frequenciaExercicioSemanal == 6 || frequenciaExercicioSemanal == 7:
+    case ficha.atividade_fisica.frequencia_semanal == 6 || ficha.atividade_fisica.frequencia_semanal == 7:
         document.write("Intenso")
     break
 
