@@ -1,20 +1,13 @@
-
-
-
-
-
 /* EXERCÍCIO 1 - DO ... WHILE */
 
 
 
 let quantidadeDeAgua = ficha.avaliação_antropométrica.peso_atual * 35
 do  {
-    console.log(`Você bebeu 200ml de água, faltam ${quantidadeDeAgua}ml para atingir a quantidade ideal por dia!`)
+    document.write(`Você bebeu 200ml de água, faltam ${quantidadeDeAgua}ml para atingir a quantidade ideal por dia!`)
     quantidadeDeAgua = quantidadeDeAgua - 200   
-} while (quantidadeDeAgua > 0) {
-    console.log(`Você bebeu a quantidade ideal de água por dia!`)
-}
-
+} while (quantidadeDeAgua > 0) 
+    document.write(`Você bebeu a quantidade ideal de água por dia!`)
 
 /* EXERCÍCIO 2 - DO ... WHILE */
 
@@ -23,20 +16,20 @@ let tempoMinimoDeSono = 8;
 
 do {
     let tempoDormido = tempoMinimoDeSono - ficha.habitos_de_vida.sono.quantidade_de_horas
-    console.log(`Você dormiu por ${ficha.habitos_de_vida.sono.quantidade_de_horas} horas, faltam ${tempoDormido} horas para atingir a quantidade ideal de sono por dia!`)
+    document.write(`Você dormiu por ${ficha.habitos_de_vida.sono.quantidade_de_horas} horas, faltam ${tempoDormido} horas para atingir a quantidade ideal de sono por dia!`)
     ficha.habitos_de_vida.sono.quantidade_de_horas = ficha.habitos_de_vida.sono.quantidade_de_horas + 1
 } while (ficha.habitos_de_vida.sono.quantidade_de_horas <= tempoMinimoDeSono) {
-    console.log(`Você dormiu a quantidade ideal de sono por dia!`)
+    document.write(`Você dormiu a quantidade ideal de sono por dia!`)
 } 
 
 /* EXERCÍCIO 3 - DO ... WHILE */
 
 
     do {
-        console.log(`Sua circunferência abdominal é de ${ficha.avaliação_antropométrica.circunferência_abdominal}cm, você está acima do peso ideal!`)
+        document.write(`Sua circunferência abdominal é de ${ficha.avaliação_antropométrica.circunferência_abdominal}cm, você está acima do peso ideal!`)
         ficha.avaliação_antropométrica.circunferência_abdominal = ficha.avaliação_antropométrica.circunferência_abdominal - 1
     } while (ficha.avaliação_antropométrica.circunferência_abdominal >89 && ficha.dados_pessoais.sexo === "masculino" || ficha.avaliação_antropométrica.circunferência_abdominal > 79 && ficha.dados_pessoais.sexo === "feminino") {
-        console.log(`Sua circunferência Abdominal é de ${ficha.avaliação_antropométrica.circunferência_abdominal} cm, Parabéns você atingiu um valor ideal de acordo com o seu genêro!`)
+        document.write(`Sua circunferência Abdominal é de ${ficha.avaliação_antropométrica.circunferência_abdominal} cm, Parabéns você atingiu um valor ideal de acordo com o seu genêro!`)
     } 
 
 /* EXERCÍCIO 4 - DO ... WHILE */
@@ -44,10 +37,10 @@ do {
 
 
        do {
-            console.log(`Seu nível de triglicerídeos é de ${ficha.historico_de_saude.triglicerides} mg/dL, você está acima do valor ideal!`)
+            document.write(`Seu nível de triglicerídeos é de ${ficha.historico_de_saude.triglicerides} mg/dL, você está acima do valor ideal!`)
             ficha.historico_de_saude.triglicerides = ficha.historico_de_saude.triglicerides - 5
          } while (ficha.historico_de_saude.triglicerides > 150) {
-            console.log(`Seu nível de triglicerídeos é de ${ficha.historico_de_saude.triglicerides} mg/dL, Parabéns você atingiu um valor ideal!`)
+            document.write(`Seu nível de triglicerídeos é de ${ficha.historico_de_saude.triglicerides} mg/dL, Parabéns você atingiu um valor ideal!`)
          }  
 
 /* EXERCÍCIO 5 - DO ... WHILE */
@@ -55,16 +48,16 @@ do {
 
 
 if (ficha.avaliação_alimentar.frequencia_de_consumo.frutas === 3) {
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas, o ideal por dia!`)
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas, o ideal por dia!`)
 } else {
 
 do 
 
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas hoje, faltam ${3 - ficha.avaliação_alimentar.frequencia_de_consumo.frutas} para atingir a quantidade ideal por dia!`),
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas hoje, faltam ${3 - ficha.avaliação_alimentar.frequencia_de_consumo.frutas} para atingir a quantidade ideal por dia!`),
     ficha.avaliação_alimentar.frequencia_de_consumo.frutas = ficha.avaliação_alimentar.frequencia_de_consumo.frutas + 1
     
   while (ficha.avaliação_alimentar.frequencia_de_consumo.frutas <= 2);
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas, o ideal por dia!`)
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas, o ideal por dia!`)
 
 } 
 /* EXERCÍCIO 6 - DO ... WHILE */
@@ -72,10 +65,10 @@ do
 
 
 do {
-    console.log(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, faltam ${150 - ficha.habitos_de_vida.atividade_fisica.duracao} minutos para atingir a quantidade ideal da semana!`)
+    document.write(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, faltam ${150 - ficha.habitos_de_vida.atividade_fisica.duracao} minutos para atingir a quantidade ideal da semana!`)
     ficha.habitos_de_vida.atividade_fisica.duracao = ficha.habitos_de_vida.atividade_fisica.duracao + 30
 } while ( ficha.habitos_de_vida.atividade_fisica.duracao <= 120) {
-    console.log(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, o ideal por semana!`)
+    document.write(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, o ideal por semana!`)
 } 
 
 /* EXERCÍCIO 7 - DO ... WHILE */
@@ -83,40 +76,40 @@ do {
 
 
  do {
-    console.log(`Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, faltam ${ficha.avaliação_antropométrica.peso_atual- ficha.avaliação_antropométrica.peso_desejado}kg para atingir o peso desejado!`)
+    document.write(`Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, faltam ${ficha.avaliação_antropométrica.peso_atual- ficha.avaliação_antropométrica.peso_desejado}kg para atingir o peso desejado!`)
     ficha.avaliação_antropométrica.peso_atual = ficha.avaliação_antropométrica.peso_atual - 0.5
 } while ( ficha.avaliação_antropométrica.peso_atual > ficha.avaliação_antropométrica.peso_desejado) {
-    console.log(`Parabéns! Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, você atingiu o peso desejado!`)
+    document.write(`Parabéns! Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, você atingiu o peso desejado!`)
 } 
 
 /* EXERCÍCIO 8 - DO ... WHILE */
 
 if (ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria >= 1) {
-    console.log("Você já foi no banheiro hoje, está ótimo")
+    document.write("Você já foi no banheiro hoje, está ótimo")
 } else {
 
 do  {
-    console.log("Você ainda não foi no banheiro, tem que ir pelo menos uma vez")
+    document.write("Você ainda não foi no banheiro, tem que ir pelo menos uma vez")
     ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria = ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria + 1
 } while (ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria < 1) {
-    console.log("Você já foi no banheiro hoje, está ótimo")
+    document.write("Você já foi no banheiro hoje, está ótimo")
 } 
 } 
 
 /* EXERCÍCIO 9 - DO ... WHILE */
 
  if (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes > 2) {
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, mais que o ideal  de porções por refeição!`)
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, mais que o ideal  de porções por refeição!`)
 } else if (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes === 2) {
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, o mínimo ideal de porções por refeição!`)
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, o mínimo ideal de porções por refeição!`)
 } else {
 
 
 do {
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, faltam ${2 - ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} para atingir a quantidade ideal de porções por refeição!`)
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, faltam ${2 - ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} para atingir a quantidade ideal de porções por refeição!`)
     ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes = ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes + 1
 } while (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes < 2) {
-    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, o mínimo ideal  de porções por refeição!`)
+    document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, o mínimo ideal  de porções por refeição!`)
 } 
 } 
 /* EXERCÍCIO 10 - DO ... WHILE */
@@ -124,10 +117,8 @@ do {
  
 
 do { 
-    console.log(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, você está acima do valor ideal!`)
+    document.write(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, você está acima do valor ideal!`)
     ficha.historico_de_saude.colesterol = ficha.historico_de_saude.colesterol - 10
 } while (ficha.historico_de_saude.colesterol >= 200) {
-    console.log(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, Parabéns você atingiu um valor ideal!`)
+    document.write(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, Parabéns você atingiu um valor ideal!`)
 } 
-
-
