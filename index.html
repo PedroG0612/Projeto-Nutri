@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Anamnese – Nutricionista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Ficha de Anamnese – Nutricionista</h1>
+  <p>Informações coletadas para criação de dietas e tratamentos.</p>
+  <hr>
+
+  <script src="ficha.js"></script>
+  <script src="anamnese.js"></script>
+  <script src="switchCase.js"></script>
+  <script src="ifElse.js"></script>
+
+  <script>
+    
+    document.write("<h2>Dados Pessoais</h2>");
+    document.write("Nome: " + ficha.dados_pessoais.nome_completo + "<br>");
+    document.write("Sexo: " + ficha.dados_pessoais.sexo + "<br>");
+    document.write("Profissão: " + ficha.dados_pessoais.profissao + "<br>");
+    document.write("Objetivo: " + ficha.queixa.objetivo + "<br><br>");
+
+   
+    document.write("<h2>Histórico de Saúde</h2>");
+    document.write("Hipertensão: " + ficha.historico_de_saude.hipertensao + "<br>");
+    document.write("Diabetes: " + ficha.historico_de_saude.diabetes + "<br>");
+    document.write("Colesterol: " + ficha.historico_de_saude.colesterol + "<br>");
+    document.write("Triglicerídeos: " + ficha.historico_de_saude.triglicerides + "<br><br>");
+
+   
+    document.write("<h2>Avaliação Antropométrica</h2>");
+    document.write("Peso atual: " + ficha.avaliação_antropométrica.peso_atual + " kg<br>");
+    document.write("Altura: " + ficha.avaliação_antropométrica.altura + " m<br>");
+    document.write("IMC (calculado): " +
+      (ficha.avaliação_antropométrica.peso_atual /
+       (ficha.avaliação_antropométrica.altura ** 2)).toFixed(2) +
+      "<br><br>");
+
+   
+    document.write("<h2>Laços (Do/While)</h2>");
+    document.write("Veja no console os exemplos de laços 'do...while' do arquivo anamnese.js.<br><br>");
+
+    document.write("<h2>Condições (If/Else)</h2>");
+    document.write("Os resultados dos testes condicionais do arquivo ifElse.js também aparecem no console.<br><br>");
+
+    document.write("<hr>");
+    document.write("<p style='text-align:center'>Exemplo acadêmico – Lógica de Programação</p>");
+  </script>
+
+</body>
+</html>
