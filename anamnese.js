@@ -17,7 +17,7 @@ queixa: {
 historico_de_saude: {
     hipertensao: true,
     diabetes: true,
-    colesterol: true,
+    colesterol: 250,
     triglicerides: 250,
     doencas_gastrointestinais: true,
     doencas_renais: true,
@@ -65,7 +65,8 @@ habitos_de_vida:{
     nivel:"baixo",
     causas_principais: "trabalho",
 
-  },uso_de_medicamentos:{
+  },
+  uso_de_medicamentos:{
     nome: "dipirona",
     dose: "1 comprimido",
     frequencia: "mensalmente",
@@ -74,12 +75,13 @@ habitos_de_vida:{
 },
   atividade_fisica: {
     tipo_de_exercicio: "calistenia",
-    frequencia_semanal: "3 vezes",
-    duracao: "30 minutos",
+    frequencia_semanal: 3,
+    duracao: 30,
     intensidade: "baixa"
   },
   habito_intestinal: {
-    frequencia_evacuatoria: "diariamente",
+
+    frequencia_evacuatoria: 2,
     consistencia_das_fezes: "tipo 3",
     sintomas_associados: "nenhum",
 
@@ -136,7 +138,7 @@ habitos_de_vida:{
     },
     frequencia_de_consumo: {
         frutas: 2,
-        verduras_e_legumes: 3,
+        verduras_e_legumes: 1,
         cereais_integrais: 3,
         leguminosas: 4,
         carnes_ovos_e_peixes: 5,
@@ -244,58 +246,65 @@ do
 } */
 /* EXERCÍCIO 6 - DO ... WHILE */
 
-/*let treinoEmMinutos = 30;
 
-do {
-    console.log(`Você treinou por ${treinoEmMinutos} minutos, faltam ${150 - treinoEmMinutos} minutos para atingir a quantidade ideal da semana!`)
-    treinoEmMinutos = treinoEmMinutos + 30
-} while ( treinoEmMinutos <= 120) {
-    console.log(`Você treinou por ${treinoEmMinutos} minutos, o ideal por semana!`)
-}*/
+
+/*do {
+    console.log(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, faltam ${150 - ficha.habitos_de_vida.atividade_fisica.duracao} minutos para atingir a quantidade ideal da semana!`)
+    ficha.habitos_de_vida.atividade_fisica.duracao = ficha.habitos_de_vida.atividade_fisica.duracao + 30
+} while ( ficha.habitos_de_vida.atividade_fisica.duracao <= 120) {
+    console.log(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, o ideal por semana!`)
+} */
 
 /* EXERCÍCIO 7 - DO ... WHILE */
 
-/*let pesoDesejado = 70;
-let pesoAtual = 90; 
 
-do {
-    console.log(`Seu peso atual é ${pesoAtual}kg, faltam ${pesoAtual - pesoDesejado}kg para atingir o peso desejado!`)
-    pesoAtual = pesoAtual - 0.5
-} while ( pesoAtual > pesoDesejado) {
-    console.log(`Parabéns! Seu peso atual é ${pesoAtual}kg, você atingiu o peso desejado!`)
+
+/* do {
+    console.log(`Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, faltam ${ficha.avaliação_antropométrica.peso_atual- ficha.avaliação_antropométrica.peso_desejado}kg para atingir o peso desejado!`)
+    ficha.avaliação_antropométrica.peso_atual = ficha.avaliação_antropométrica.peso_atual - 0.5
+} while ( ficha.avaliação_antropométrica.peso_atual > ficha.avaliação_antropométrica.peso_desejado) {
+    console.log(`Parabéns! Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, você atingiu o peso desejado!`)
 } */
 
 /* EXERCÍCIO 8 - DO ... WHILE */
 
-/* let evacuacoesPorDia = 0;
+/* if (ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria >= 1) {
+    console.log("Você já foi no banheiro hoje, está ótimo")
+} else {
 
 do  {
     console.log("Você ainda não foi no banheiro, tem que ir pelo menos uma vez")
-    evacuacoesPorDia = evacuacoesPorDia + 1
-} while (evacuacoesPorDia < 1) {
+    ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria = ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria + 1
+} while (ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria < 1) {
     console.log("Você já foi no banheiro hoje, está ótimo")
+} 
 } */
 
 /* EXERCÍCIO 9 - DO ... WHILE */
 
-/* let porcoesPorRefeicao = 0;
+/* if (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes > 2) {
+    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, mais que o ideal  de porções por refeição!`)
+} else if (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes === 2) {
+    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, o mínimo ideal de porções por refeição!`)
+} else {
+
 
 do {
-    console.log(`Você comeu ${porcoesPorRefeicao} porções de vegetais na refeição, faltam ${2 - porcoesPorRefeicao} para atingir a quantidade ideal de porções por refeição!`)
-    porcoesPorRefeicao = porcoesPorRefeicao + 1
-} while (porcoesPorRefeicao < 2) {
-    console.log(`Você comeu ${porcoesPorRefeicao} porções de vegetais na refeição, o ideal  de porções por refeição!`)
+    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, faltam ${2 - ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} para atingir a quantidade ideal de porções por refeição!`)
+    ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes = ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes + 1
+} while (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes < 2) {
+    console.log(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais na refeição, o mínimo ideal  de porções por refeição!`)
+} 
 } */
-
 /* EXERCÍCIO 10 - DO ... WHILE */
 
-/* let colesterolTotal = 300;
+ 
 
-do { 
-    console.log(`Seu nível de colesterol total é de ${colesterolTotal} mg/dL, você está acima do valor ideal!`)
-    colesterolTotal = colesterolTotal - 10
-} while (colesterolTotal >= 200) {
-    console.log(`Seu nível de colesterol total é de ${colesterolTotal} mg/dL, Parabéns você atingiu um valor ideal!`)
+/*do { 
+    console.log(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, você está acima do valor ideal!`)
+    ficha.historico_de_saude.colesterol = ficha.historico_de_saude.colesterol - 10
+} while (ficha.historico_de_saude.colesterol >= 200) {
+    console.log(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, Parabéns você atingiu um valor ideal!`)
 } */
 
 
