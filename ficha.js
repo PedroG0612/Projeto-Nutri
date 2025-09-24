@@ -12,12 +12,13 @@ endereco: window.prompt("Endereço")
 },
 queixa: {
     motivo_da_consulta: window.prompt("Motivo da consulta"),
-    objetivo: window.prompt("objetivo"),
+    objetivo: window.prompt("Qual o seu Objetivo"),
 },
 historico_de_saude: {
     hipertensao: window.prompt("Possui hipertensão ?"),
     diabetes: window.prompt("Possui diabetes?"),
-    colesterol: window.prompt("Possui colesterol?"),
+    colesterol: window.prompt("Qual o valor do seu colesterol, em números?"),
+    triglicerides: Number.parseInt(window.prompt("Qual o valor do seu triglicerídeos, em números?")),
     doencas_gastrointestinais: window.prompt("Possui doenças gastrointestinais?"),
     doencas_renais: window.prompt("Possui doenças renais?"),
     doencas_hepaticas: window.prompt("Possui doenças hepaticas?"),
@@ -28,15 +29,15 @@ historico_de_saude: {
     intolerancias_alimentares:window.prompt("Possui alguma intolerancia alimentar?"),    
 },
 cirurgias:{
-    tipo: window.prompt("fez alguma cirurgia?"),
-    data: window.prompt("se fez, quando foi?"),
+    tipo: window.prompt("Fez alguma cirurgia?"),
+    data: window.prompt("Se fez, quando foi?"),
 },
 
 uso_de_suplementos:{
-    tipo: window.prompt("usa algum suplemento?"),
-    dose: Number.parseInt(window.prompt("quantas doses costuma tomar?")),
+    tipo: window.prompt("Usa algum suplemento?"),
+    dose: Number.parseInt(window.prompt("quantas doses costuma tomar, em número?")),
     frequencia: window.prompt("Qual a frequência?"),
-    tempo_de_uso: Number.parseInt(window.prompt("tempo de uso:")),
+    tempo_de_uso: Number.parseInt(window.prompt("Tempo de uso, em número:")),
 
 },
 historico_familiar:{
@@ -48,10 +49,10 @@ historico_familiar:{
 },
 habitos_de_vida:{
   sono: {
-    horario_que_dorme: window.prompt("Qual horario você dorme?"),
+    horario_que_dorme: window.prompt("Qual horário você dorme?"),
     horario_que_acorda: window.prompt("Qual horario você acorda?"),
     qualidade_do_sono: window.prompt("Qual a qualidade do seu sono?"),
-    quantidade_de_horas: window.prompt("Quantas horas você dorme?"),
+    quantidade_de_horas: Number.parseInt(window.prompt("Quantas horas você dorme, em número?")),
 
   },
   estresse:{
@@ -62,11 +63,11 @@ habitos_de_vida:{
   atividade_fisica: {
     tipo_de_exercicio:window.prompt("Faz algum tipo de exercicio fisíco?"),
     frequencia_semanal: window.prompt("Qual a frequência que você se exercita?"),
-    duracao: window.prompt("Quanto tempo você passa se exercitando?"),
+    duracao: Number.parseInt(window.prompt("Quanto tempo você passa se exercitando, em números?")),
     intensidade: window.prompt("Qual a intensidade que você se exercita?")
   },
   habito_intestinal: {
-    frequencia_evacuatoria: window.prompt("Quantas vezes que você evacua no dia ?"),
+    frequencia_evacuatoria: Number.parseInt(window.prompt("Quantas vezes que você evacua no dia, em números ?")),
     consistencia_das_fezes: window.prompt("Qual a consistência das suas fezes?"),
     sintomas_associados:window.prompt("Possui algum desconforto enquanto evacua?"),
 
@@ -113,7 +114,7 @@ habitos_de_vida:{
         petiscos_e_beliscos_ao_longo_do_dia: window.prompt("Você consome petiscos ao longo do dia?"),
         consumo_de_doces: window.prompt("você consome doces?"),
         consumo_de_alimentos_ultraprocessados: window.prompt("Você consome alimentos ultraprocessados?"),
-        frequencia_de_refeições_fora_de_casa: Number.parseInt(window.prompt("Quantas refeições você faz fora de casa?")),
+        frequencia_de_refeições_fora_de_casa: Number.parseInt(window.prompt("Quantas refeições você faz fora de casa, em números?")),
 
 
     },
@@ -122,24 +123,24 @@ habitos_de_vida:{
         composição: window.prompt("Faz o uso de óleo ou gorduras?")
     },
     frequencia_de_consumo: {
-        frutas: Number.parseInt(window.prompt("Quantas vezes no dia você consome frutas?")),
-        verduras_e_legumes: Number.parseInt(window.prompt("Quantas vezes no dia você consome verduras ou legumes?")),
-        leguminosas: Number.parseInt(window.prompt("Quantas vezes no dia você consome comidas leguminosas?")),
-        carnes_ovos_e_peixes: Number.parseInt(window.prompt("Quantas vezes você consome no dia carnes, ovos e peixes?")),
-        laticinios: Number.parseInt(window.prompt("Quantas vezes você consome no dia laticinios?")),
-        doces: Number.parseInt(window.prompt("Quantas vezes você consome no dia doces?")),
-        refrigerantes_sucosIndustrializados: Number.parseInt(window.prompt("Quantas vezes você consome no dia refrigerantes ou sucos industrializados?")),
-        fast_food: Number.parseInt(window.prompt("Quantas vezes você consome no dia fast foods?"))
+        frutas: Number.parseInt(window.prompt("Quantas vezes no dia você consome frutas, em números?")),
+        verduras_e_legumes: Number.parseInt(window.prompt("Quantas vezes no dia você consome verduras ou legumes, em números?")),
+        leguminosas: Number.parseInt(window.prompt("Quantas vezes no dia você consome comidas leguminosas, em números?")),
+        carnes_ovos_e_peixes: Number.parseInt(window.prompt("Quantas vezes você consome no dia carnes, ovos e peixes, em números?")),
+        laticinios: Number.parseInt(window.prompt("Quantas vezes você consome no dia laticinios, em números?")),
+        doces: Number.parseInt(window.prompt("Quantas vezes você consome no dia doces, em números?")),
+        refrigerantes_sucosIndustrializados: Number.parseInt(window.prompt("Quantas vezes você consome no dia refrigerantes ou sucos industrializados, em números?")),
+        fast_food: Number.parseInt(window.prompt("Quantas vezes você consome no dia fast foods, em números?"))
     }
  },
  avaliação_antropométrica: {
-    peso_atual: window.prompt("Qual o seu peso atual?"),
-    altura: window.prompt("Qual a sua altura?"),
-    peso_habitual: window.prompt("Qual o seu peso habitual?"),
-    peso_desejado: window.prompt("Qual o seu peso desejado?"),
-    circunferência_abdominal: window.prompt("Qual a sua circunfêrencia abdominal?"),
-    circunferência_quadril: window.prompt("Qual a circunfêrencia do seu quadril?"),
-    circunferência_braço: window.prompt("Qual a circunfêrencia do seu braço?"),
+    peso_atual: Number.parseInt(window.prompt("Qual o seu peso atual, em quilos?")),
+    altura: Number.parseInt(window.prompt("Qual a sua altura, em centímetros?")),
+    peso_habitual: Number.parseInt(window.prompt("Qual o seu peso habitual, em quilos?")),
+    peso_desejado: Number.parseInt(window.prompt("Qual o seu peso desejado, em quilos?")),
+    circunferência_abdominal: Number.parseInt(window.prompt("Qual a sua circunfêrencia abdominal, em centímetros?")),
+    circunferência_quadril: Number.parseInt(window.prompt("Qual a circunfêrencia do seu quadril, em centímetros?")),
+    circunferência_braço: Number.parseInt(window.prompt("Qual a circunfêrencia do seu braço, em centímetros?")),
     dobras_cutâneas: window.prompt("Você possui dobras cutâneas?"),
     percentual_de_gordura_corporal: window.prompt("Qual o seu percentual de gordura?"),
     massa_magra: window.prompt("Qual o seu índice de massa magra?")
