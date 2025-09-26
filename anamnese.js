@@ -1,9 +1,6 @@
 /* EXERCÍCIO 1 - DO ... WHILE */
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 2147d122c27d41f34f8736d1038f423c9f8d3262
 let quantidadeDeAgua = ficha.avaliação_antropométrica.peso_atual * 35
 do  {
     document.write(`Você bebeu 200ml de água, faltam ${quantidadeDeAgua}ml para atingir a quantidade ideal por dia!<br>`)
@@ -14,10 +11,7 @@ do  {
 
 /* EXERCÍCIO 2 - DO ... WHILE */
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 2147d122c27d41f34f8736d1038f423c9f8d3262
 ficha.habitos_de_vida.sono.quantidade_de_horas = 0;
 let tempoMinimoDeSono = 8;
 
