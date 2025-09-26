@@ -302,7 +302,7 @@
 
   <h4>Exercício 2</h4>
   <script>
-    ficha.habitos_de_vida.sono.quantidade_de_horas = 0;
+   
     let tempoMinimoDeSono = 8;
 
     do {
@@ -404,7 +404,105 @@
 
      
       </div>
-    
+  <div id="IF" class="IF...Else">
+        <h2>IF... Else</h2>
+        <h3>Exercícios Utilizando o If... Else</h3>
+        <h4>Exercício 1</h4>
+  <script>
+    ficha.avaliação_antropométrica.imc = ficha.peso / (ficha.altura ** 2)
+
+
+if(ficha.avaliação_antropométrica.imc > 25){
+    document.write(`Você esta acima do peso`)
+} else{
+    document.write(`Você não está acima do peso`)
+}
+
+  </script>
+
+  <h4>Exercício 2</h4>
+  <script>
+ficha.avaliação_antropométrica.peso_desejado = Number.parseFloat(window.prompt("Qual o seu peso desejado? "));
+
+if(ficha.avaliação_antropométrica.peso_desejado < ficha.avaliação_antropométrica.peso_atual){
+    document.write("Seu objetivo é emagrecer<br>");
+} else if (ficha.avaliação_antropométrica.peso_desejado > ficha.avaliação_antropométrica.peso_atual){
+    document.write("Seu objetivo é ganhar massa<br>");
+} else {
+    document.write("Você já está no peso desejado<br>");
+}
+
+  </script>
+
+  <h4>Exercício 3</h4>
+  <script>
+ if(ficha.habitos_de_vida.sono.quantidade_de_horas < 7){
+    document.write("Sono insuficiente!")
+} else{
+    document.write("Você está dormindo bem!")
+}
+  </script>
+
+  <h4>Exercício 4</h4>
+  <script>
+   if(ficha.avaliação_antropométrica.circunferência_abdominal > 102 && ficha.sexo == "masculino"){
+    document.write("Risco cardiovascular!")
+} else if(ficha.avaliação_antropométrica.circunferência_abdominal > 88 && ficha.genero == "feminino"){
+    document.write("Risco cardiovascular!")
+} else{
+    document.write("Sem risco de problemas cardiovasculares!")
+}
+  </script>
+
+  <h4>Exercício 5</h4>
+  <script>
+  ficha.consumo_de_agua = window.prompt("Quantos mililitros de água você bebe por dia?")
+
+if(ficha.consumo_de_agua.quantidade_aproximada < 2){
+    document.write("Consome menos que 2 litros de água por dia")
+} else{
+    document.write("Consome a quantidade suficiente de água")
+}
+  </script>
+
+  <h4>Exercício 6</h4>
+  <script>
+   document.write(ficha.avaliação_clínica_e_bioquímica.pressão_arterial > 140/90 ? "Você possui Hipertensão" : "Você não possui hipertensão")
+
+  </script>
+
+  <h4>Exercício 7</h4>
+  <script>
+ document.write(ficha.habito_intestinal_frequencia_evacuatoria !== "diariamente" ? "Não evacua diariamente" : "Evacua pelo menos uma vez por dia");
+
+  </script>
+
+  <h4>Exercício 8</h4>
+  <script>
+  document.write(ficha.avaliação_antropométrica.peso_habitual < ficha.avaliação_antropométrica.peso_atual ? "Risco de ganho de peso recente" : "Sem risco de ganho de peso recente");
+
+  </script>
+
+  <h4>Exercício 9</h4>
+  <script>
+  document.write(
+  ficha.avaliação_alimentar.frequencia_de_consumo.doces > ficha.avaliação_alimentar.frequencia_de_consumo.frutas
+    ? "Consome mais doces do que frutas pela semana<br>"
+    : "Consome mais frutas do que doces pela semana<br>"
+);
+  </script>
+
+  <h4>Exercício 10</h4>
+  <script>
+   document.write(ficha.historico_de_saude.triglicerides > 150 ? "Triglicerídeos acima que 150 mg/dL" : "Triglicerídeos abaixo de 150 mg/dL")
+  </script>
+
+     
+      </div>
+
+      
+
+      </div>
     
   <footer></footer>
 
