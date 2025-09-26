@@ -1,0 +1,413 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ficha de Anamnese – Nutricionista</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+  
+      <header>
+        <div class="header-center">
+        <h1>Ficha de Anamnese – Nutricionista</h1>
+        <p>Informações coletadas para criação de dietas e tratamentos.</p>
+    <a href="#DW">Do ... While</a>
+        </div>
+
+      </header>
+
+
+      <script src="ficha.js"></script>
+
+      <div class="Informacoes">
+
+      <div class="pessoal">
+      
+      <script>
+        document.write("<h2>Dados Pessoais</h2>");
+
+        document.write("<strong> Nome:</strong> " + ficha.dados_pessoais.nome_completo + "<br>");
+        document.write("<strong>Sexo:</strong> " + ficha.dados_pessoais.sexo + "<br>");
+        document.write("<strong>Estado Civil:</strong> " + ficha.dados_pessoais.estado_civil + "<br>" );
+        document.write("<strong>Profissão:</strong>  " + ficha.dados_pessoais.profissao + "<br>");
+        document.write("<strong>Escolaridade:</strong> " + ficha.dados_pessoais.escolaridade + "<br>");
+        document.write("<strong>Telefone:</strong> " + ficha.dados_pessoais.telefone + "<br>");
+        document.write("<strong>E-mail:</strong> " + ficha.dados_pessoais.email + "<br>");
+        document.write("<strong>Endereço:</strong>" + ficha.dados_pessoais.endereco + "<br>");
+
+          </script>
+
+  </div>
+
+  <div class="queixa">
+    <script>
+        document.write("<h2>Queixa Principal</h2>");
+
+        document.write("<strong>Motivo da Consulta:</strong> " + ficha.queixa.motivo_da_consulta + "<br>");
+        document.write("<strong>Objetivo:</strong> " + ficha.queixa.objetivo + "<br><br>");
+  </script>
+  </div>
+
+
+  <div class="hsaude"></div>
+  <script>
+
+        document.write("<h2>Histórico de Saúde</h2>");
+
+        document.write("<strong>Hipertensão:</strong> " + ficha.historico_de_saude.hipertensao + "<br>");
+        document.write("<strong>Diabetes:</strong> " + ficha.historico_de_saude.diabetes + "<br>");
+        document.write("<strong>Colesterol:</strong> " + ficha.historico_de_saude.colesterol + "<br>");
+        document.write("<strong>Triglicerídeos:</strong> " + ficha.historico_de_saude.triglicerides + "<br>"); 
+        document.write("<strong>Doenças Gastro Intestinais:</strong>" + ficha.historico_de_saude.doencas_gastrointestinais + "<br>");
+        document.write("<strong>Doenças Renais:</strong> " + ficha.historico_de_saude.doencas_renais + "<br>");
+        document.write("<strong>Doenças Hepáticas:</strong> " + ficha.historico_de_saude.doencas_hepaticas + "<br>");
+        document.write("<strong>Doenças Cardíacas:</strong> " + ficha.historico_de_saude.doencas_cardiacas + "<br>");
+        document.write("<strong>Doenças Resiratórias:</strong> " + ficha.historico_de_saude.doencas_respiratorias + "<br>");
+        document.write("<strong>Doenças AutoImunes:</strong> " + ficha.historico_de_saude.doencas_autoimunes + "<br>");
+        document.write("<strong>Alergias:</strong> " + ficha.historico_de_saude.alergias + "<br>");
+        document.write("<strong>Intolerâncias Alimentares:</strong> " + ficha.historico_de_saude.intolerancias_alimentares + "<br><br>");
+    
+  </script>
+  </div>
+
+  <div class="cirurgias">
+
+  <script>
+
+        document.write("<h2>Cirurgias</h2>");
+        document.write("<strong>Tipo de Cirurgia:</strong> " + ficha.cirurgias.tipo + "<br>");
+        document.write("<strong>Data:</strong> " + ficha.cirurgias.data + "<br>");
+  </script>
+
+  </div>
+
+  <div class="medicamentos">
+
+  <script>
+        document.write("<h2>Uso de Medicamentos</h2>");
+        document.write("<strong>Nome:</strong> " + ficha.uso_de_medicamentos.nome + "<br>");
+        document.write("<strong>Dose:</strong> " + ficha.uso_de_medicamentos.dose + "<br>");
+        document.write("<strong>Frequência:</strong> " + ficha.uso_de_medicamentos.frequencia + "<br>");
+        document.write("<strong>Tempo de Uso:</strong> " + ficha.uso_de_medicamentos.tempo_de_uso + "<br>");
+    
+  </script>
+
+  </div>
+
+  <div class="suplementos">
+
+      <script>
+
+      document.write("<h2>Uso de Suplementos</h2>");
+        document.write("<strong>Tipo:</strong> " + ficha.uso_de_suplementos.tipo + "<br>");
+        document.write("<strong>Dose:</strong> " + ficha.uso_de_suplementos.dose + "<br>");
+        document.write("<strong>Frequência:</strong> " + ficha.uso_de_suplementos.frequencia + "<br>");
+        document.write("<strong>Tempo de Uso:</strong> " + ficha.uso_de_suplementos.tempo_de_uso + "<br>");
+      </script>
+
+      </div>
+
+
+      <div class="familiar">
+
+      <script>
+
+      document.write("<h2>Histórico Familiar</h2>");
+        document.write("<strong>Obesidade:</strong> " + ficha.historico_familiar.obesidade + "<br>");
+        document.write("<strong>Diabetes:</strong> " + ficha.historico_familiar.diabetes + "<br>");
+        document.write("<strong>Hipertensão:</strong> " + ficha.historico_familiar.hipertensao + "<br>");
+        document.write("<strong>Câncer:</strong> " + ficha.historico_familiar.cancer + "<br>");
+        document.write("<strong>Doenças Cardíacas:</strong> " + ficha.historico_familiar.doencas_cardiacas + "<br>");
+      </script>
+
+
+
+      <div class="vida">
+
+      <script>
+
+      document.write("<h2>Hábitos de Vida</h2>");
+      document.write("<h3>Sono</h3>");
+        document.write("<strong>Horário que Dorme:</strong> " + ficha.habitos_de_vida.sono.horario_que_dorme + "<br>");
+        document.write("<strong>Horário que Acorda:</strong> " + ficha.habitos_de_vida.sono.horario_que_acorda + "<br>");
+        document.write("<strong>Qualidade de Sono:</strong> " + ficha.habitos_de_vida.sono.qualidade_de_sono + "<br>");
+        document.write("<strong>Quantidade de Horas:</strong> " + ficha.habitos_de_vida.sono.quantidade_de_horas + "<br>");
+
+        document.write("<h3>Estresse</h3>");
+        document.write("<strong>Nível de Estresse:</strong> " + ficha.habitos_de_vida.estresse.nivel + "<br>");
+        document.write("<strong>Motivo do Estresse:</strong> " + ficha.habitos_de_vida.estresse.causas_principais + "<br>");
+    
+
+            document.write("<h3>Uso de Medicamentos</h3>");
+        document.write("<strong>Nome:</strong> " + ficha.habitos_de_vida.uso_de_medicamentos.nome+ "<br>");
+        document.write("<strong>Dose:</strong> " + ficha.habitos_de_vida.uso_de_medicamentos.dose + "<br>");
+        document.write("<strong>Frequência:</strong> " + ficha.habitos_de_vida.uso_de_medicamentos.frequencia + "<br>");
+        document.write("<strong>Tempo de Uso:</strong> " + ficha.habitos_de_vida.uso_de_medicamentos.tempo_de_uso + "<br>");
+
+                  document.write("<h3>Atividade Física</h3>");
+        document.write("<strong>Tipo de Exercício:</strong> " + ficha.habitos_de_vida.atividade_fisica.tipo_de_exercicio + "<br>");
+        document.write("<strong>Frequência Semanal:</strong> " + ficha.habitos_de_vida.atividade_fisica.frequencia_semanal + "<br>");
+        document.write("<strong>Duração:</strong> " + ficha.habitos_de_vida.atividade_fisica.duracao + "<br>");
+        document.write("<strong>Intensidade:</strong> " + ficha.habitos_de_vida.atividade_fisica.intensidade + "<br>");
+
+
+        
+                  document.write("<h3>Hábito Intestinal</h3>");
+        document.write("<strong>Frequência Evacuatória:</strong> " + ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria + "<br>");
+        document.write("<strong>Consistência das Fezes:</strong> " + ficha.habitos_de_vida.habito_intestinal.consistencia_das_fezes + "<br>");
+        document.write("<strong>Sintomas Associados:</strong> " + ficha.habitos_de_vida.habito_intestinal.sintomas_associados + "<br>");
+
+        
+        document.write("<h3>Consumo de Água</h3>");
+        document.write("<strong>Quantidade Aproximada:</strong> " + ficha.habitos_de_vida.consumo_de_agua.quantidade_aproximada + "<br>");
+
+
+        document.write("<h3>Consumo de álcool</h3>");
+        document.write("<strong>Frequência:</strong> " + ficha.habitos_de_vida.consumo_de_alcool.frequencia + "<br>");
+        document.write("<strong>Tipo:</strong> " + ficha.habitos_de_vida.consumo_de_alcool.tipo + "<br>");
+        document.write("<strong>Quantidade:</strong> " + ficha.habitos_de_vida.consumo_de_alcool.quantidade + "<br>");
+
+
+              document.write("<h3>Tabagismo</h3>");
+        document.write("<strong>Fuma Atualmente:</strong> " + ficha.habitos_de_vida.tabagismo.fuma_atualmente + "<br>");
+        document.write("<strong>Fumou Anteriormente:</strong> " + ficha.habitos_de_vida.tabagismo.fumou_anteriormente + "<br>");
+        document.write("<strong>Tempo de Uso ou Abstinência:</strong> " + ficha.habitos_de_vida.tabagismo.tempo_de_uso_ou_abstinencia + "<br>");
+
+      </script>
+      </div>
+
+
+  <div class="alimentar">
+
+      <script>
+
+      document.write("<h2>Avaliação Alimenta</h2>");
+      document.write("<h3>Avaliação Alimenta</h3>");
+        document.write("<strong>Alimentos Preferidos:</strong> " + ficha.avaliação_alimentar.preferencias_e_aversões.alimentos_preferidos + "<br>");
+        document.write("<strong>Alimentos que Não Gosta:</strong> " + ficha.avaliação_alimentar.preferencias_e_aversões.alimentos_que_não_gosta + "<br>");
+        document.write("<strong>Alimentos que Causam Desconforto:</strong> " + ficha.avaliação_alimentar.preferencias_e_aversões.alimentos_que_causam_desconforto + "<br>");
+
+    document.write("<h3>Intolerâncias e Alergias</h3>");
+        document.write("<strong>Relatadas:</strong> " + ficha.avaliação_alimentar.intolerancias_e_alergias.relatadas + "<br>");
+        document.write("<strong>Confirmadas por Exame:</strong> " + ficha.avaliação_alimentar.intolerancias_e_alergias.confirmadas_por_exame + "<br>");
+
+
+          document.write("<h3>Rotina Alimentar</h3>");
+          document.write("<h4>Café da Manhã</h4>");
+        document.write("<strong>Horário:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.cafe_da_manha.horario + "<br>");
+        document.write("<strong>Alimentos e Quantidade:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.cafe_da_manha.alimentos_e_quantidades + "<br>");
+        document.write("<h4>Lanche da Manhã</h4>");
+        document.write("<strong>Seu Lanche da Manhã:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.lanche_da_manha + "<br>");
+        document.write("<h4>Almoço</h4>");
+        document.write("<strong>Entrada:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.almoço.entrada + "<br>");
+        document.write("<strong>Prato Principal:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.almoço.prato_principal + "<br>");
+        document.write("<strong>Acompanhamentos:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.almoço.acompanhamentos + "<br>");
+              document.write("<h4>Lanche da Tarde</h4>");
+        document.write("<strong>Seu Lanche da Tarde:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.lanche_da_tarde + "<br>");
+            document.write("<h4>Jantar</h4>");
+        document.write("<strong>Seu Jantar:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.jantar + "<br>");
+        document.write("<h4>Ceia</h4>");
+        document.write("<strong>Sua Ceia:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.ceia + "<br>");
+              document.write("<h4>Petiscos e Beliscos</h4>");
+        document.write("<strong>Petiscos e Belicos ao Longo do Dia:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.petiscos_e_beliscos_ao_longo_do_dia + "<br>");
+              document.write("<h4>Consumo de Doces</h4>");
+        document.write("<strong>Consumos de Doces ao Longo do Dia:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.consumo_de_doces + "<br>");
+              document.write("<h4>Alimentos Ultraprocessados</h4>");
+        document.write("<strong>Consumo de Alimentos Ultraprocessados:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.consumo_de_alimentos_ultraprocessados + "<br>");
+              document.write("<h4>Refeições Fora de Casa</h4>");
+        document.write("<strong>Quantidade de Refeições Fora de Casa:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.frequencia_de_refeições_fora_de_casa + "<br>");
+              document.write("<h4>Tipo de Refeições Fora de Casa</h4>");
+        document.write("<strong>Tipo de Refeições Fora de Casa:</strong> " + ficha.avaliação_alimentar.rotina_alimentar.tipos_de_refeições_fora_de_casa + "<br>");
+
+
+      
+      document.write("<h3>Método de Preparo</h3>");
+        document.write("<strong>Método de Preparação:</strong> " + ficha.avaliação_alimentar.metodos_de_preparo.metodo + "<br>");
+        document.write("<strong>Composição:</strong> " + ficha.avaliação_alimentar.metodos_de_preparo.composição + "<br>");
+
+
+    document.write("<h3>Frequência de Consumo</h3>");
+      document.write("<strong>Frutas:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.frutas + "<br>");
+        document.write("<strong>Verduras e Legumes:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes + "<br>");
+      document.write("<strong>Cereais Integrais:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.cereais_integrais + "<br>");
+        document.write("<strong>Leguminosas:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.leguminosas + "<br>");
+      document.write("<strong>Carnes, Ovos e Peixes:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.carnes_ovos_e_peixes + "<br>");
+        document.write("<strong>Laticínios:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.laticinios + "<br>");
+      document.write("<strong>Doces:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.doces + "<br>");
+        document.write("<strong>Refrigerantes e Sucos Industrializados:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.refrigerantes_sucosIndustrializados + "<br>");
+      document.write("<strong>Fast Foods:</strong> " + ficha.avaliação_alimentar.frequencia_de_consumo.fast_food + "<br>");
+
+  </script>
+      </div>
+
+
+      <div class="aantropometrica">
+      <script>
+        
+    document.write("<h2>Avaliação Antropométrica</h2>");
+        document.write("<strong>Peso Atual:</strong> " + ficha.avaliação_antropométrica.peso_atual + "kg <br>");
+        document.write("<strong>Altura:</strong> " + ficha.avaliação_antropométrica.altura + "m<br>");
+        document.write("<strong>IMC:</strong> " + ficha.avaliação_antropométrica.imc + "<br>");
+  document.write("<strong>Peso Habitual:</strong> " + ficha.avaliação_antropométrica.peso_habitual+ "kg<br>");
+        document.write("<strong>Peso Desejado:</strong> " + ficha.avaliação_antropométrica.peso_desejado + "kg <br>");
+        document.write("<strong>Circunferência Abdominal:</strong> " + ficha.avaliação_antropométrica.circunferência_abdominal + "cm <br>");
+  document.write("<strong>Circunferência do Quadril:</strong> " + ficha.avaliação_antropométrica.circunferência_quadril + "cm <br>");
+        document.write("<strong>Circunferência do Braço:</strong> " + ficha.avaliação_antropométrica.circunferência_braço + "cm <br>");
+        document.write("<strong>Dobras Cutâneas:</strong> " + ficha.avaliação_antropométrica.dobras_cutâneas + "<br>");
+  document.write("<strong>Percentual de Gordura Corporal:</strong> " + ficha.avaliação_antropométrica.percentual_de_gordura_corporal + "% <br>");
+        document.write("<strong>Massa Magra:</strong> " + ficha.avaliação_antropométrica.massa_magra + "<br>");
+        
+
+        </script>
+      </div>
+
+  <div class="aceb">
+      <script>
+        
+    document.write("<h2>Avaliação Clínica e Bioquímica</h2>");
+        document.write("<strong>Pressão Arterial:</strong> " + ficha.avaliação_clínica_e_bioquímica.pressão_arterial + " <br>");
+        document.write("<strong>Exames Recentes:</strong> " + ficha.avaliação_clínica_e_bioquímica.exames_recentes + "<br>");
+    
+        </script>
+      </div>
+
+
+      <div class="eop">
+      <script>
+        
+    document.write("<h2>Expectativas e Objetivos do Paciente</h2>");
+        document.write("<strong>Objetivos Estéticos:</strong> " + ficha.expectativas_e_objetivos_do_paciente.estéticos + " <br>");
+        document.write("<strong>Objetivos Clínicos:</strong> " + ficha.expectativas_e_objetivos_do_paciente.clínicos + "<br>");
+      document.write("<strong>Objetivos na Qualidade de Vida:</strong> " + ficha.expectativas_e_objetivos_do_paciente.qualidade_de_vida + " <br>");
+        document.write("<strong>Objetivos Esportivos:</strong> " + ficha.expectativas_e_objetivos_do_paciente.esportivos + "<br>");
+    
+        </script>
+      </div>
+
+    </div>
+
+      <div id="DW" class="Do...While">
+        <h2>Do... While</h2>
+        <h3>Exercícios Utilizando o Do ... While</h3>
+        <h4>Exercício 1</h4>
+  <script>
+    let quantidadeDeAgua = ficha.avaliação_antropométrica.peso_atual * 35;
+    do {
+      document.write(`Você bebeu 200ml de água, faltam ${quantidadeDeAgua}ml para atingir a quantidade ideal por dia!<br>`);
+      quantidadeDeAgua = quantidadeDeAgua - 200;
+    } while (quantidadeDeAgua > 0);
+    document.write(`Você bebeu a quantidade ideal de água por dia!<br>`);
+  </script>
+
+  <h4>Exercício 2</h4>
+  <script>
+    ficha.habitos_de_vida.sono.quantidade_de_horas = 0;
+    let tempoMinimoDeSono = 8;
+
+    do {
+      let tempoDormido = tempoMinimoDeSono - ficha.habitos_de_vida.sono.quantidade_de_horas;
+      document.write(`Você dormiu por ${ficha.habitos_de_vida.sono.quantidade_de_horas} horas, faltam ${tempoDormido} horas para atingir a quantidade ideal de sono por dia!<br>`);
+      ficha.habitos_de_vida.sono.quantidade_de_horas++;
+    } while (ficha.habitos_de_vida.sono.quantidade_de_horas <= tempoMinimoDeSono);
+    document.write(`Você dormiu a quantidade ideal de sono por dia!<br>`);
+  </script>
+
+  <h4>Exercício 3</h4>
+  <script>
+    do {
+      document.write(`Sua circunferência abdominal é de ${ficha.avaliação_antropométrica.circunferência_abdominal}cm, você está acima do peso ideal!<br>`);
+      ficha.avaliação_antropométrica.circunferência_abdominal--;
+    } while (
+      ficha.avaliação_antropométrica.circunferência_abdominal > 89 && ficha.dados_pessoais.sexo === "masculino" ||
+      ficha.avaliação_antropométrica.circunferência_abdominal > 79 && ficha.dados_pessoais.sexo === "feminino"
+    );
+    document.write(`Sua circunferência abdominal é de ${ficha.avaliação_antropométrica.circunferência_abdominal} cm, Parabéns você atingiu um valor ideal de acordo com o seu gênero!<br>`);
+  </script>
+
+  <h4>Exercício 4</h4>
+  <script>
+    do {
+      document.write(`Seu nível de triglicerídeos é de ${ficha.historico_de_saude.triglicerides} mg/dL, você está acima do valor ideal!<br>`);
+      ficha.historico_de_saude.triglicerides -= 5;
+    } while (ficha.historico_de_saude.triglicerides > 150);
+    document.write(`Seu nível de triglicerídeos é de ${ficha.historico_de_saude.triglicerides} mg/dL, Parabéns você atingiu um valor ideal!<br>`);
+  </script>
+
+  <h4>Exercício 5</h4>
+  <script>
+    if (ficha.avaliação_alimentar.frequencia_de_consumo.frutas === 3) {
+      document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas, o ideal por dia!<br>`);
+    } else {
+      do {
+        document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas hoje, faltam ${3 - ficha.avaliação_alimentar.frequencia_de_consumo.frutas} para atingir a quantidade ideal por dia!<br>`);
+        ficha.avaliação_alimentar.frequencia_de_consumo.frutas++;
+      } while (ficha.avaliação_alimentar.frequencia_de_consumo.frutas <= 2);
+      document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.frutas} frutas, o ideal por dia!<br>`);
+    }
+  </script>
+
+  <h4>Exercício 6</h4>
+  <script>
+    do {
+      document.write(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, faltam ${150 - ficha.habitos_de_vida.atividade_fisica.duracao} minutos para atingir a quantidade ideal da semana!<br>`);
+      ficha.habitos_de_vida.atividade_fisica.duracao += 30;
+    } while (ficha.habitos_de_vida.atividade_fisica.duracao <= 120);
+    document.write(`Você treinou por ${ficha.habitos_de_vida.atividade_fisica.duracao} minutos, o ideal por semana!<br>`);
+  </script>
+
+  <h4>Exercício 7</h4>
+  <script>
+    do {
+      document.write(`Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, faltam ${ficha.avaliação_antropométrica.peso_atual - ficha.avaliação_antropométrica.peso_desejado}kg para atingir o peso desejado!<br>`);
+      ficha.avaliação_antropométrica.peso_atual -= 0.5;
+    } while (ficha.avaliação_antropométrica.peso_atual > ficha.avaliação_antropométrica.peso_desejado);
+    document.write(`Parabéns! Seu peso atual é ${ficha.avaliação_antropométrica.peso_atual}kg, você atingiu o peso desejado!<br>`);
+  </script>
+
+  <h4>Exercício 8</h4>
+  <script>
+    if (ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria >= 1) {
+      document.write("Você já foi no banheiro hoje, está ótimo<br>");
+    } else {
+      do {
+        document.write("Você ainda não foi no banheiro, tem que ir pelo menos uma vez<br>");
+        ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria++;
+      } while (ficha.habitos_de_vida.habito_intestinal.frequencia_evacuatoria < 1);
+      document.write("Você já foi no banheiro hoje, está ótimo<br>");
+    }
+  </script>
+
+  <h4>Exercício 9</h4>
+  <script>
+    if (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes > 2) {
+      document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais, mais que o ideal!<br>`);
+    } else if (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes === 2) {
+      document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais, o mínimo ideal!<br>`);
+    } else {
+      do {
+        document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais, faltam ${2 - ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} para atingir o ideal!<br>`);
+        ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes++;
+      } while (ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes < 2);
+      document.write(`Você comeu ${ficha.avaliação_alimentar.frequencia_de_consumo.verduras_e_legumes} porções de vegetais, o mínimo ideal!<br>`);
+    }
+  </script>
+
+  <h4>Exercício 10</h4>
+  <script>
+    do {
+      document.write(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, você está acima do valor ideal!<br>`);
+      ficha.historico_de_saude.colesterol -= 10;
+    } while (ficha.historico_de_saude.colesterol >= 200);
+    document.write(`Seu nível de colesterol total é de ${ficha.historico_de_saude.colesterol} mg/dL, Parabéns você atingiu um valor ideal!<br>`);
+  </script>
+
+     
+      </div>
+    
+    
+  <footer></footer>
+
+
+    </body>
+  </html>
