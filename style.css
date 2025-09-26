@@ -269,8 +269,40 @@ hr {
   
 }
 
+a {
+  background-color: #6ccf70;   /* verde suave */
+  border-radius: 20px;
+  width: 220px;
+  height: 40px;
+  margin: 8px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+/* Hover simples */
+a:hover {
+  background-color: #5ab85e;
+}
 /* Rodapé */
 
+footer {
+  background-color: #6ccf70;   /* verde do botão */
+  padding: 15px 0;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+   border-left: none !important; 
+}
 
 /* Responsividade */
 @media (max-width: 768px) {

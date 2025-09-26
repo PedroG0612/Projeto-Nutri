@@ -39,7 +39,7 @@ switch(ficha.avaliação_alimentar.metodos_de_preparo.metodo){
 
     case "grelhado":
         document.write("Prefere grelhado")
-}
+} 
 
 
 switch(ficha.habitos_de_vida.sono.qualidade_do_sono){

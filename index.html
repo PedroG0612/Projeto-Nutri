@@ -13,6 +13,8 @@
         <h1>Ficha de Anamnese – Nutricionista</h1>
         <p>Informações coletadas para criação de dietas e tratamentos.</p>
     <a href="#DW">Do ... While</a>
+    <a href="#IF">If ... Else</a>
+    <a href="#SW">Switch ... Case</a>
         </div>
 
       </header>
@@ -500,11 +502,273 @@ if(ficha.consumo_de_agua.quantidade_aproximada < 2){
      
       </div>
 
+       <div id="SW" class="Switch...Case">
+        <h2>Switch...Case</h2>
+        <h3>Exercícios Utilizando o Switch...Case</h3>
+        <h4>Exercício 1</h4>
+  <script>
+  switch(ficha.habitos_de_vida.estresse.nivel){
+    case "Alto":
+        document.write("Requer descansar mais, se alimentar melhor e beber mais água")
+    break
+    case "médio":
+        document.write("Descansar um pouco mais")
+    break
+    case "baixo":
+        document.write("Descansar um pouco")
+    break
+    default:
+        document.write("Nível de estresse não reconhecido")
+}
+
+
+
+  </script>
+
+  <h4>Exercício 2</h4>
+  <script>
+switch(ficha.habitos_de_vida.atividade_fisica.tipo_de_exercicio){
+    case "musculação":
+        document.write("Faz musculação")
+    break
+    
+    case "corrida":
+        document.write("Pratica corrida")
+    break
+
+    default:
+        document.write("Não pratica nenhum exercício")
+        break
+}
+
+  </script>
+
+  <h4>Exercício 3</h4>
+  <script>
+switch(ficha.avaliação_alimentar.metodos_de_preparo.metodo){
+    case "frito":
+        document.write("Prefere frito")
+    break
+
+    case "assado":
+        document.write("Prefere assado")
+    break
+
+    case "grelhado":
+        document.write("Prefere grelhado")
+    break
+    default:
+        document.write("Método de preparo não reconhecido")
+} 
+
+
+  </script>
+
+  <h4>Exercício 4</h4>
+  <script>
+ switch(ficha.habitos_de_vida.sono.qualidade_do_sono){
+    case "leve":
+        document.write("Qualidade de sono leve")
+    break
+
+    case "Regular":
+        document.write("Qualidade de sono regular")
+    break
+
+    case "Bom":
+        document.write("Qualidade de sono Bom")
+    break
+    case "Ruim":
+        document.write("Qualidade de sono ruim")
+    break
+    default:
+        document.write("Qualidade de sono não reconhecida")
+}
+  </script>
+
+  <h4>Exercício 5</h4>
+  <script>
+ switch(ficha.habitos_de_vida.habito_intestinal.consistencia_das_fezes){
+    case 1:
+        document.write("Tipo 1: Caroços duros e separados, como nozes (difícil de passar).")
+    break
+
+    case 2:
+        document.write("Tipo 2: Forma de salsicha, mas granuloso.")
+    break
+
+    case 3: 
+        document.write("Tipo 3: Como uma salsicha, mas com fissuras na superfície.")
+    break
+
+    case 4:
+        document.write("Tipo 4: Como uma salsicha ou serpente, suave e macio.")
+    break
+
+    case 5:
+        document.write("Tipo 5: Bolhas suaves com bordas nítidas (que passam facilmente).")
+    break
+
+    case 6:
+        document.write("Tipo 6: Peças fofas com bordas em pedaços.")
+    break
+
+    case 7: 
+    document.write("Tipo 7: Aquoso, sem partes sólidas, inteiramente líquido.")
+    break
+
+
+    default:
+        document.write("Tipo não reconhecido!")
+}
+
+  </script>
+
+  <h4>Exercício 6</h4>
+  <script>
+   switch(true){
+    case ficha.avaliação_antropométrica.imc < 19:
+        document.write("Abaixo do peso!")
+    break
+
+    case ficha.avaliação_antropométrica.imc > 19 && ficha.avaliação_antropométrica.imc < 25:
+        document.write("Peso Normal")
+    break
+
+    case ficha.avaliação_antropométrica.imc > 25 && ficha.avaliação_antropométrica.imc < 30:
+        document.write("Sobrepeso")
+    break
+
+    case ficha.avaliação_antropométrica.imc > 30 && ficha.avaliação_antropométrica.imc < 35:
+        document.write("Obesidade Grau I")
+    break
+
+    case ficha.avaliação_antropométrica.imc > 35 && ficha.avaliação_antropométrica.imc < 40:
+        document.write("Obesidade de Grau II")
+    break
+
+    case ficha.avaliação_antropométrica.imc >= 40:
+        document.write("Obesidade de Grau III( Obesidade Grave )")
+    break
+    default:
+        document.write("IMC não reconhecido!")
+    }
+  </script>
+
+  <h4>Exercício 7</h4>
+  <script>
+ switch(ficha.uso_de_suplementos.tipo){
+    case "whey":
+        document.write("Suplemento: Whey")
+    break
+
+    case "creatina":
+        document.write("Suplemento: Creatina")
+    break
+
+    case "vitaminaC":
+        document.write("Suplemento: Vitamina C")
+    break
+
+
+    default:
+        document.write("Suplemento não reconhecido!")
+    break
+
+}
+  </script>
+
+  <h4>Exercício 8</h4>
+  <script>
+  switch(ficha.avaliação_alimentar.rotina_alimentar.tipos_de_refeições_fora_de_casa){
+    case "lanche":
+        document.write("Refeição fora de casa: Lanche")
+    break
+
+    case "self-service":
+        document.write("Refeição fora de casa: Self-service")
+    break
+    
+    
+    case "fast food":
+        document.write("Refeição fora de casa: Fast-food")
+    break
+
+
+    default:
+        document.write("Refeição não reconhecida!")
+    break
+    
+}
+
+  </script>
+
+  <h4>Exercício 9</h4>
+  <script>
+
+switch(true){
+    case ficha.habitos_de_vida.atividade_fisica.frequencia_semanal === 0:
+        document.write("Sedentário")
+    break
+
+
+    case ficha.habitos_de_vida.atividade_fisica.frequencia_semanal === 1 || ficha.habitos_de_vida.atividade_fisica.frequencia_semanal == 2:
+        document.write("Leve")
+    break
+
+    case ficha.habitos_de_vida.atividade_fisica.frequencia_semanal >= 3 && ficha.habitos_de_vida.atividade_fisica.frequencia_semanal <= 5:
+        document.write("Moderado")
+    break
+
+    case ficha.habitos_de_vida.atividade_fisica.frequencia_semanal === 6 || ficha.habitos_de_vida.atividade_fisica.frequencia_semanal == 7:
+        document.write("Intenso")
+    break
+    default:
+        document.write("Frequência não reconhecida!")
+
+}
+
+  </script>
+
+  <h4>Exercício 10</h4>
+ 
+   <script>
+// Altere aqui para testar: "casado", "divorciado", "viúvo", etc.
+
+switch (ficha.dados_pessoais.estado_civil) {
+    case "solteiro":
+        document.write("Você é solteiro. Dica: solteiros costumam comer fora com mais frequência ou pular refeições. Tente manter uma rotina com horários fixos e alimentos frescos.");
+        break;
+
+    case "casado":
+        document.write("Você é casado. Dica: casais tendem a fazer refeições juntos, o que pode ser positivo. Aproveite para cozinhar em casa e evitar alimentos ultraprocessados.");
+        break;
+
+    case "divorciado":
+        document.write("Você é divorciado. Dica: mudanças de rotina podem afetar a alimentação. Tente manter uma dieta equilibrada mesmo em momentos de transição.");
+        break;
+
+    case "viúvo":
+        document.write("Você é viúvo. Dica: a perda pode afetar o apetite. Busque apoio e tente manter refeições regulares com alimentos nutritivos.");
+        break;
+
+    default:
+        document.write("Estado civil não reconhecido. Por favor, insira um valor válido.");
+}
+</script>
+ 
+
+     
+      </div>
+
       
 
       </div>
     
-  <footer></footer>
+  <footer>
+      <p>© 2025 Ficha de Anamnese – Nutricionista</p>
+  <p>Desenvolvido por Daniel Vara, Pedro Garcia, Murilo Alexandro e Guilherme Vilares para fins acadêmicos</p>
+  </footer>
 
 
     </body>

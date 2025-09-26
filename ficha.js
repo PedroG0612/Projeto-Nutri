@@ -98,6 +98,7 @@ habitos_de_vida:{
         confirmadas_por_exame: window.prompt("Possui laudo médico?")
     },
     rotina_alimentar: {
+        tipos_de_refeições_fora_de_casa: window.prompt("Quai tipo de refeição você faz fora de casa. EX: Fast food, lanche?"),
         cafe_da_manha: {
             horario: window.prompt("Qual o horário que você toma café da manhã?"),
             alimentos_e_quantidades: window.prompt("Oque você consome no café da manhã?"),
